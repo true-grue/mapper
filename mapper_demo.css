@@ -1,0 +1,63 @@
+body {
+  padding-left: 5%;
+  padding-right: 5%;
+  background: #a5b791 url("gradient.png") repeat-x;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.nl {
+  clear: both;
+}
+
+#log {
+  text-align: center;
+}
+
+#log_text {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background: #ff9900;
+  color: black;
+}
+
+.button {
+  background: #a5b791;
+  border: 2px solid #6f8159;
+  color: black;
+  font-weight: bold;
+}
+
+.button:active {
+  background: white;
+}
+
+.scroll {
+  overflow: auto;
+  border: 2px solid #6f8159;
+  background: white;
+  margin-top: 0.5em;
+}
+
+#canvas {
+  padding: 0.5em;
+}
+
+#graph {
+  font-family: monospace;
+  width: 100%;
+  height: 20em;
+  border: 2px solid #6f8159;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.bold {
+  font-weight: bold;
+}

@@ -1,0 +1,47 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mapper_demo.css">
+<title>Mapping Algorithm Demo</title>
+</head>
+<body>
+<script src="mapper_conf.js"></script>
+<script src="mapper.js"></script>
+<h1>Mapping Algorithm Demo</h1>
+<p>
+<a href="http://sovietov.com/">Peter Sovietov</a>, 2011-09-30
+</p>
+<textarea id="graph">
+; FOF
+events -> sequencer -> formants
+sequencer -> router -> update1 -> update2 -> update3 -> update4 -> update5 -> update6
+mix1 -> mix2 -> mix3 -> mix4 -> mix5 -> mix6
+update1 -> noise1 -> mix1
+update2 -> noise2 -> mix2
+update3 -> formant1 -> mix3
+update4 -> formant2 -> mix4
+update5 -> formant3 -> mix5
+update6 -> formant4 -> mix6
+mix6 -> predac -> dac18 (9, 0)
+</textarea>
+<div class="bold">
+<div class="left">
+<input id="map" class="button" value="Map" type=button />
+<input id="optimize" class="button" value="Optimize" type=button />
+Grid: <input id="width" type="text" size="4" />
+&times; <input id="height" type="text" size="4" />
+</div>
+<div class="right">
+Maximum wire length: <input id="wire_length" type="text" size="4" />
+Cycles: <input id="cycles" type="text" size="4" />
+</div>
+<div id="log"></div>
+</div>
+<div class="nl"></div>
+<div class="scroll">
+<canvas id="canvas" width="800" height="600">
+Your browser does not support HTML5 Canvas!
+</canvas>
+</div>
+<script src="mapper_ui.js"></script>
+</body>
+</html>
